@@ -12,18 +12,18 @@ public class PruebasBankV2 {
 		
 		
 		try {
-			a1.withdraw(650);
+			a1.withdraw(150);
 			
-			//System.out.println("Ingreso de dinero 22.50");
-			//a1.deposit(22.50);
+			System.out.println("Ingreso de dinero 22.50");
+			a1.deposit(22.50);
 			
-			//a1.withdraw(47.62);
+			a1.withdraw(47.62);
 			
-			//a1.withdraw(400);
+			a1.withdraw(600);
 			
 			
 		}catch(Exception e) {
-			System.out.println("No tienes dinero Amigo !");
+			System.out.println("No tienes dinero Amigo !" + e.getMessage());
 		}
 		
 	}

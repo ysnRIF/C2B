@@ -18,7 +18,7 @@ public class Account {
 		if(amt > 0) {
 			this.Balance = Balance + amt;
 			flag = true;
-			//System.out.printf("has ingresado dinero de tu cuenta tu saldo es %f  %n",getBalance());
+			System.out.printf("has ingresado dinero de tu cuenta tu saldo es %f  %n",getBalance());
 		}else {
 			System.out.println("Eso no es un deposito valido !!");
 		}
@@ -31,9 +31,10 @@ public class Account {
 		if(amt <= this.Balance) {
 			this.Balance = Balance - amt;
 			flag = true;
-			//System.out.printf("has sacado dinero de tu cuenta tu saldo es %f  %n",getBalance());
+			System.out.printf("has sacado dinero de tu cuenta tu saldo es %f  %n",getBalance());
 		}else {
-			System.out.println("No tienes suficiente SALDO !!");
+			throw new RuntimeException("YOU HAVE NO MONEY MY FRIEND");
+			//System.out.println("No tienes suficiente SALDO !!");
 		}
 		return flag;
 	}
