@@ -31,7 +31,6 @@ public class Pruebas {
 			System.out.println("No puedo cargar !" + e.getMessage());
 		}
 		
-		// cargar cajas usando classe caja
 		
 		
 		
